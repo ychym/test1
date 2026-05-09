@@ -12,7 +12,7 @@ def main(page: ft.Page):
         
         if name:
 
-            text_hello.value = f"Hello, {name.value}"
+            text_hello.value = f"Hello, {text_input.value}"
             text_hello.color = ft.Colors.GREEN_100
             greeting_history.append(name)
             greeting_text.value = f'List:\n' + "\n".join(greeting_history[-5:])
